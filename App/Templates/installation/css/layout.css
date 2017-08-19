@@ -1,0 +1,206 @@
+body {
+    padding-top: 20px;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.mainusers {
+    float: right;
+    clear: both;
+
+}
+
+.maincontents {
+    min-height: 300px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner {
+    padding: 0;
+}
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .75);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.results_lines {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+    width: 100%;
+    clear: both;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.results_lines_text:hover {background: #f5f5f5;}
+
+.results_lines_title {
+    display: inline-block;
+    float: left;
+    left: 135px;
+    text-overflow: ellipsis;
+    font-weight:bold;
+}
+
+.results_lines_bottom {
+    display: inline-block;
+    float: right;
+    left: 135px;
+    text-overflow: ellipsis;
+    font-size: small;
+    font-weight:bold;
+
+}
+
+
+.results_lines_text {
+    display: inline-block;
+    float: left;
+    left: 135px;
+    width: 80%;
+    text-overflow: ellipsis;
+    height: 60px;
+    overflow: hidden;
+
+}
+
+.results_lines_img {
+    display: inline-block;
+    border: 0;
+    float: left;
+    max-width: 126px;
+}
+
+
+.nav-justified .active {
+    background-color: #F5F5F5;
+    border: 1px solid #DCA7A7;
+}
+
+
+
+@media (min-width: 768px) {
+    .nav-justified {
+        max-height: 52px;
+    }
+
+    .nav-justified > li > a {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #d5d5d5;
+    }
+
+    .nav-justified > li:first-child > a {
+        border-left: 0;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .nav-justified > li:last-child > a {
+        border-radius: 0 5px 5px 0;
+        border-right: 0;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .masthead,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+.showPHPCode {
+
+    background-color: #f7f7f7;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 15px 10px;
+    min-width: 50px;
+    cursor: pointer;
+    font-size: 12px;
+	overflow-x: auto;
+}
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  }
+
+.showPHPCodeLines {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-user-select: none;
+    border-color: #eee;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 18px;
+    min-width: 50px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 1%;
+}
+
+div.modal div.modal-backdrop {
+    z-index: 0;
+}

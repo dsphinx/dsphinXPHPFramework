@@ -1,0 +1,40 @@
+<script src="Contents/signup/signup.js"> </script>  <link href="Contents/signup/signup.css" rel="stylesheet">
+
+
+<ul class="breadcrumb">
+    <li> Control Panel  <span class="divider">/</span></li>
+    <li class="active"> Προσωπικά Στοιχεία <?php echo $_SESSION['Auth']['UserName'];?> </li>
+</ul>
+
+<!-- Start Formoid form-->
+<form class="formoid-default"
+      style="font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px"
+      method="post">
+    <input type="hidden" name="register_new_user_completed" value="1">
+    <input type="hidden" name="email" value="[@email]">
+    <input type="hidden" name="passwd" value="[@passwd]">
+
+    <div class="title"><h5>Λογαριασμός  <?php echo $account;?></h5>
+
+        <h3><?php echo $_SESSION['Auth']['UserName'];?></h3>
+    </div>
+
+    <div class="element-radio"><label class="title">Κωδικός</label>
+
+        <input type="password"  pattern=".{8,}" title="8 characters minimum"  class="form-control" placeholder="new Password" required name="password0" id="pass">
+        <input type="password"  pattern=".{8,}" title="8 characters minimum"  class="form-control" placeholder="verify new Password" required name="password1" id="pass1">
+
+
+        </div>
+
+    <input type="hidden" name="_call_service" value="0">
+
+        <span class="clearfix"></span>
+
+    <div class="submit"><input type="submit" value="Αλλαγή Κωδικού"/></div>
+</form>
+<div id="formoid-info"></div>
+
+
+<!-- Stop Formoid form-->
+

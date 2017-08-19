@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <foaf:Person>
+	<foaf:surname>Melisidis</foaf:surname>
+	<foaf:gender>Male</foaf:gender>
+	<foaf:givenname>Melisidis</foaf:givenname>
+	<foaf:family_name>Keramopoulos</foaf:family_name>
+	<foaf:workplaceHomepage rdf:about="http://www.minedu.gov.gr/"/>
+	<foaf:firstName>Constantinos</foaf:firstName>
+	<foaf:schoolHomepage rdf:about="http://msc.it.teithe.gr/"/>
+	<foaf:title>Constantinos M. Melisidis</foaf:title>
+	<foaf:nick>dsphinx</foaf:nick>
+	<foaf:depiction rdf:resource="https://pbs.twimg.com/profile_images/378800000599392575/557e727274b27637c4c79a9346be5e39_400x400.jpeg"  rdf:about="https://plus.google.com/+ConstantinosMelisides"/> 
+	<foaf:homepage rdf:about="http://dsphinx.plug.gr"/>
+	<rdfs:seeAlso rdf:resource="http://dsphinx.plug.gr/dsphinx.rdf"/>
+	<foaf:based_near rdf:resource="http://dbpedia.org/page/Ptolemaida/"/>
+	<foaf:topic_interest>http://dbpedia.org/page/Unix</foaf:topic_interest>
+	<foaf:topic_interest>http://dbpedia.org/page/Linux</foaf:topic_interest>
+	<foaf:mbox_sha1sum>73816ebff7599b5f3215f955841ae8e545a384d9</foaf:mbox_sha1sum>
+	<foaf:knows>
+	 <foaf:Person>
+		<foaf:nick>euclid</foaf:nick>
+		<foaf:surname>Keramopoulos</foaf:surname>
+		<rdfs:seeAlso rdf:about="http://dblp.l3s.de/d2r/page/authors/Euclid_Keramopoulos"/>
+		<foaf:firstName>Euclid</foaf:firstName> 
+	<foaf:mbox_sha1sum>136b11c2b2b5338a87906d55419c7eac9e8d5e11</foaf:mbox_sha1sum>
+	 </foaf:Person>
+	</foaf:knows>
+	</foaf:Person>
+	<foaf:Image rdf:about="https://pbs.twimg.com/profile_images/378800000599392575/557e727274b27637c4c79a9346be5e39_400x400.jpeg">
+	<dc:title>dsphinx</dc:title>
+	</foaf:Image>
+</rdf:RDF>

@@ -1,0 +1,98 @@
+<div class="loginwrapper">
+
+    <div class="panel login-panel">
+        <div class="loginbtm">
+            <h5 class="well"> [@TITLE]</h5></div>
+        <div class="panel-content form-horizontaL">
+
+            <form  method="post" name="frmZForgot" id="frmZForgot" class="form-horizontal loginform" autocomplete="off"
+                  style="display: none;">
+                <div class="loginmid">
+                    <div class="control-group">
+                        <label class="control-label" for="inputEmail">
+                            Email:
+                        </label>
+
+                        <div class="controls">
+                            <input class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" disabled
+                                   required type="email">
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="loginbtm well">
+                    <div>
+                        <a href="javascript:void(0);" class="btn btn-md tool"  data-toggle="tooltip" title="back to login screen " id="backtologin"><i class="glyphicon glyphicon-chevron-left"></i>  Login</a>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-warning btn-sm" name="sublogin2" disabled value="LogIn">Submit
+                        </button>
+                    </div>
+                </div>
+
+                <input type="hidden" name="_call_service" value="0">
+
+                [@FORM_KEY]
+            </form>
+
+            <form method="post" name="form-signin" id="form-signin" class="form-horizontal loginform" autocomplete="off">
+                <div class="loginmid">
+
+                    <div class="control-group">
+                        <label class="control-label" for="user">Username:</label>
+
+                        <div class="controls">
+                            <input class=" form-control" id="user" name="user" placeholder="Username" required
+                                   autofocus type="text">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="pass">Password:</label>
+
+                        <div class="controls">
+                            <input class="form-control" id="pass" name="pass" placeholder="Password" required
+                                   type="password" pattern=".{8,}"  title="8 characters minimum">
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span id="msgbox"  style="display:none; float: right;"></span>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" id="remember" name="remember">
+      </span>
+                                <input type="text" class="form-control" value="Remember Me " disabled>
+                            </div>
+                            <br/>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="loginbtm well">
+                    <div>
+                     <a href="javascript:void(0);" class="btn btn-md tool"   data-toggle="tooltip" title="I forgot my password " id="forgotpw"><i class="glyphicon glyphicon-user"></i> forgot </a>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-info btn-sm tool"  data-toggle="tooltip" title="login to [@TITLE] "  name="sublogin2" value="LogIn">Login</button>
+                    </div>
+                </div>
+
+
+                <input type="hidden" name="_call_service" value="0">
+                <input type="hidden" name="_connectedCoordinates" id="connectedCoordinates" value="">
+
+                [@FORM_KEY]
+
+            </form>
+
+        </div>
+     </div>
+</div>
+<div class="clearfix"></div>
+<div class=" "> <p class="text-right">[@INFO] </p></div>
+

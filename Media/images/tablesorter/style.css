@@ -1,0 +1,32 @@
+/* tables */
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	overflow-x: auto; /*Horizontal scrollbar*/
+    -ms-overflow-x: auto; /*IE 8 horizontal scrollbar*/
+    overflow-y: auto; /*Verical scrollbar*/
+    -ms-overflow-y: auto; /*IE 8 vertical scrollbar*/
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+table.tablesorter  {
+	overflow-x: auto; /*Horizontal scrollbar*/
+	-ms-overflow-x: auto; /*IE 8 horizontal scrollbar*/
+	overflow-y: auto; /*Verical scrollbar*/
+	-ms-overflow-y: auto; /*IE 8 vertical scrollbar*/
+}
+
+table.tablesorter tr:hover {
+		color: #000;
+		background: #e1e8FF;
+}

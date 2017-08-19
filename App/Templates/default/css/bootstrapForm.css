@@ -1,0 +1,797 @@
+/* Reset styles of the form */
+.formContainer div, .formContainer span, .formContainer applet, .formContainer object, .formContainer iframe, .formContainer
+h1, .formContainer h2, .formContainer h3, .formContainer h4, .formContainer h5, .formContainer h6, .formContainer p, .formContainer blockquote, .formContainer pre, .formContainer
+a, .formContainer abbr, .formContainer acronym, .formContainer address, .formContainer big, .formContainer cite, .formContainer code, .formContainer
+del, .formContainer dfn, .formContainer em, .formContainer img, .formContainer ins, .formContainer kbd, .formContainer q, .formContainer s, .formContainer samp, .formContainer
+small, .formContainer strike, .formContainer strong, .formContainer sub, .formContainer sup, .formContainer tt, .formContainer var, .formContainer
+b, .formContainer u, .formContainer i, .formContainer center, .formContainer
+dl, .formContainer dt, .formContainer dd, .formContainer ol, .formContainer ul, .formContainer li, .formContainer
+fieldset, .formContainer form, .formContainer label, .formContainer legend, .formContainer
+table, .formContainer caption, .formContainer tbody, .formContainer tfoot, .formContainer thead, .formContainer tr, .formContainer th, .formContainer td, .formContainer
+article, .formContainer aside, .formContainer canvas, .formContainer details, .formContainer embed, .formContainer 
+figure, .formContainer figcaption, .formContainer footer, .formContainer header, .formContainer hgroup, .formContainer 
+menu, .formContainer nav, .formContainer output, .formContainer ruby, .formContainer section, .formContainer summary, .formContainer
+time, .formContainer mark, .formContainer audio, .formContainer video {
+	border: 0;
+	vertical-align: top;
+}
+
+/* HTML5 display-role reset for older browsers */
+.formContainer article, .formContainer aside, .formContainer details, .formContainer figcaption, .formContainer figure, .formContainer 
+footer, .formContainer header, .formContainer hgroup, .formContainer menu, .formContainer nav, .formContainer section {
+	display: block;
+}
+
+.formContainer ol, .formContainer ul {
+	list-style: none;
+}
+
+
+/*  (C) dsphinx */
+
+.formContainer legend  {
+	text-align: left;
+	padding: 13px 0px 3px 27px;
+
+}
+
+.formContainer hr  {
+	margin-top: 1px;
+	margin-bottom: 15px;
+}
+
+.formContainerColor_default {
+	background: none;
+}
+
+.formContainerColor_Radial_Gradient{
+	background: radial-gradient(at 50% 50% , rgba(255, 255, 255, 0.5) 0%, rgba(235, 235, 235, 0.5) 50%, rgba(150, 150, 150, 0.5) 100%) repeat scroll 0% 0% transparent;
+}
+
+.formContainerColor_Industrial{
+	background-color: rgb(246,246,246);
+}
+
+.formContainer .status {
+	overflow: auto;
+	padding: 0px 0px 3px 10px;
+}
+
+
+/* dsphinx */
+
+
+
+.formContainer blockquote, .formContainer q {
+	quotes: none;
+}
+.formContainer blockquote:before, .formContainer blockquote:after, .formContainer
+q:before, .formContainer q:after {
+	content: '';
+	content: none;
+}
+.formContainer table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Hiding/showing hints.*/
+.hidden_hint {
+	display:none !important;
+}
+
+input:focus + .fb-hint, select:focus + .fb-hint,
+textarea:focus + .fb-hint {
+	display:inline-block !important;
+}
+
+
+/* Hiddes the spinning buttons in webkit*/
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Placeholder colors */
+.placeholder {
+	color:#BEBEBE !important;
+}
+
+.formContainer ::-webkit-input-placeholder {
+    color:#BEBEBE !important;
+}
+.formContainer :-moz-placeholder {
+    color:#BEBEBE !important;
+}
+
+
+/* Style to force the submit button to not be standard */
+.non-standard{
+	-webkit-appearance: none;
+	font-size:17px;
+	padding:0px;
+	color: rgb(0,0,0);
+	background-color: rgb(255,192,192);
+	border: 2px solid rgb(50,50,50);
+}
+
+/* Container for the scripts error reporting */
+#fb_error_report {
+	border: 1px solid #BF0000 !important; 
+	padding: 10px !important; 
+	margin: 10px !important;
+	background-color: #fff;
+	display:inline-block;
+	width:90%;
+}
+
+/* Heading for the scripts error reporting */
+#fb_error_report h4 {
+	color:#BF0000;
+	font-size: 16px;
+}
+
+/* Container for the scripts error elements */
+#fb_error_report ul {
+	list-style-type: disc;
+	padding:20px;
+}
+
+/* Scripts error elements */
+#fb_error_report ul li {
+	color: #888;
+}
+
+/* Theme CSS */
+/* This rule will applied to the form container */
+.formContainer {
+margin: 03px auto;
+   padding: 0px 0px 0px 0px;
+/*	width: 600px;
+   font-family: Helvetica, Arial, Sans-serif;
+   font-size:13px;
+   */
+   color: #333;
+ /*  background-color: rgb(246,246,246);  */
+   border: 1px solid rgb(193,193,193);
+   -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.28);
+   -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.28);
+   box-shadow: 0 0 10px 0 rgba(0,0,0,0.28);
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+}
+
+.formContainer #fb-form-header1 {
+	height:5px;	
+	padding-left:10px;
+	
+}
+
+/* Special rule to modify the selector by a new one that can be used in both for Mac and Windows. Must be used with !important*/
+.formContainer .selected-object {
+   
+}
+
+	/* Column properties. This applies to a common style inside the form  in fb-large mode*/
+.formContainer.fb-large .column {
+	margin: 0px;
+	padding: 0 7% 0 7%;
+}
+
+	/* Column properties. This applies to a common style inside the form */
+.formContainer .column {
+	margin: 0px;
+	padding: 0 5% 0 5%;
+}
+
+	/* Column properties. This applies to a common style inside the form  in fb-small mode*/
+.formContainer.fb-small .column {
+	margin: 0px;
+	padding: 0 0 0 8%;
+}
+
+
+/* Common rule for the items (label and control)*/
+.formContainer .fb-item {
+	width: 100%;
+	display:inline-block;
+    zoom:1;
+    *display:inline;
+}
+
+
+/* Common rules for the items padding*/
+
+.formContainer.fb-large .fb-item {   
+   padding:6px 4px 15px 4px;
+}
+.formContainer .fb-item {   
+   padding:5px 4px 10px 4px;
+}
+.formContainer.fb-small .fb-item {   
+   padding:4px 2px 5px 2px;
+}
+
+
+/* Common rules for the submit button container padding*/
+
+.formContainer.fb-large #fb-submit-button-div {   
+   padding: 6px 5px 20px 5px;
+}
+.formContainer #fb-submit-button-div {   
+   padding: 5px 5px 15px 5px;
+}
+.formContainer.fb-small #fb-submit-button-div {   
+   padding: 4px 3px 10px 3px;
+}
+
+/*Rules for the width of the item depending on the current mode used for width */
+
+/*fb-large mode classes*/
+
+.formContainer.fb-large .fb-item.fb-100-item-column{ width:100%; }
+.formContainer.fb-large .fb-item.fb-75-item-column{ 	width:73%; }
+.formContainer.fb-large .fb-item.fb-66-item-column{ 	width:64%; }
+.formContainer.fb-large .fb-item.fb-50-item-column{	width:48%; }
+.formContainer.fb-large .fb-item.fb-33-item-column{	width:31%; }
+.formContainer.fb-large .fb-item.fb-25-item-column{	width:22%; }
+.formContainer.fb-large .fb-item.fb-20-item-column{	width:18%; }
+
+/*Normal mode classes*/
+.formContainer .fb-item.fb-100-item-column{ 	width:99%; }
+.formContainer .fb-item.fb-75-item-column{ 	width:72%; }
+.formContainer .fb-item.fb-66-item-column{ 	width:63%; }
+.formContainer .fb-item.fb-50-item-column{	width:47%; }
+.formContainer .fb-item.fb-33-item-column{	width:30%; }
+.formContainer .fb-item.fb-25-item-column{	width:21%; }
+.formContainer .fb-item.fb-20-item-column{	width:16%; }
+
+/*fb-small mode classes*/
+
+.formContainer.fb-small .fb-item.fb-100-item-column{	width:98%; }
+.formContainer.fb-small .fb-item.fb-75-item-column{ 	width:70%; }
+.formContainer.fb-small .fb-item.fb-66-item-column{ 	width:61%; }
+.formContainer.fb-small .fb-item.fb-50-item-column{	width:45%; }
+.formContainer.fb-small .fb-item.fb-33-item-column{	width:28%; }
+.formContainer.fb-small .fb-item.fb-25-item-column{	width:21%; }
+.formContainer.fb-small .fb-item.fb-20-item-column{	width:15%; }
+
+
+/*Form Elements. This rule is common to all elements (inputs/selects) in fb-large Mode*/
+.formContainer.fb-large  input[type=text], .formContainer.fb-large  input[type=password], 
+.formContainer.fb-large  input[type=email], .formContainer.fb-large  input[type=number],
+.formContainer.fb-large  input[type=date], .formContainer.fb-large  input[type=url], 
+.formContainer.fb-large  textarea, .formContainer.fb-large  input[type=file],
+.formContainer.fb-large  input[type=tel]{
+	color: #666;
+	font: normal 12px Helvetica, Arial, Sans-serif;
+	border: 1px solid rgb(220,223,231);
+	border-top-color: rgb(170,173,178);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:99%;
+	max-width:100%;
+}
+
+.formContainer select {width:99%;
+max-width:100%;}
+
+	/*Form Elements. This rule is common to all elements (inputs/selects)*/
+.formContainer input[type=text], .formContainer input[type=password], 
+.formContainer input[type=email], .formContainer input[type=number],
+.formContainer input[type=date], .formContainer input[type=url], 
+ .formContainer input[type=file],
+.formContainer input[type=tel] {
+	color: #666;
+	font: normal 12px Helvetica, Arial, Sans-serif;
+	border: 1px solid rgb(220,223,231);
+	border-top-color: rgb(170,173,178);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:98%;
+	max-width:100%;
+}
+
+/*Form Elements. This rule is common to all elements (inputs/selects) in fb-small Mode*/
+.formContainer.fb-small input[type=text], .formContainer.fb-small input[type=password], 
+.formContainer.fb-small input[type=email], .formContainer.fb-small input[type=number],
+.formContainer.fb-small input[type=date], .formContainer.fb-small input[type=url], 
+ .formContainer.fb-small input[type=file],
+.formContainer.fb-small input[type=tel] {
+	color: #666;
+	font: normal 11px Helvetica, Arial, Sans-serif;
+	border: 1px solid rgb(220,223,231);
+	border-top-color: rgb(170,173,178);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:92%;
+	max-width:100%;
+}
+
+.formContainer input[type=file]  {
+   border:none;
+}
+.formContainer.fb-small input[type=file] {
+	border:none;
+}
+.formContainer.fb-large input[type=file] {
+	border:none;
+}
+
+	/*Form Elements. This rule is common to all inputs boxes in fb-large Mode*/
+.formContainer.fb-large input[type=text], .formContainer.fb-large input[type=password], 
+.formContainer.fb-large input[type=email], .formContainer.fb-large input[type=number],
+.formContainer.fb-large input[type=date], .formContainer.fb-large input[type=url],
+.formContainer.fb-large textarea, .formContainer.fb-large input[type=tel] {
+	padding: 9px 6px 9px 6px;
+}
+	
+	/*Form Elements. This rule is common to all inputs boxes*/
+.formContainer input[type=text], .formContainer input[type=password], 
+.formContainer input[type=email], .formContainer input[type=number],
+.formContainer input[type=date], .formContainer input[type=url],
+.formContainer input[type=tel], .formContainer textarea {
+	padding: 7px 4px 7px 4px;
+}
+
+	/*Form Elements. This rule is common to all inputs boxes in fb-small Mode*/
+.formContainer.fb-small input[type=text], .formContainer.fb-small input[type=password], 
+.formContainer.fb-small input[type=email], .formContainer.fb-small input[type=number],
+.formContainer.fb-small input[type=date], .formContainer.fb-small input[type=url],
+.formContainer.fb-small textarea, .formContainer.fb-small input[type=tel] {
+	padding: 4px 1px 4px 1px;
+}
+
+
+
+.formContainer .fb-input-number {}
+
+
+.formContainer .fb-input-number input {color: rgb(69,69,69);
+			font: normal 12px Helvetica, arial;
+			border: 1px solid rgb(220,223,231);
+			border-top-color: rgb(170,173,178);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;}
+
+/* Rule for the title container */
+	.formContainer .fb-header { 
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color:#000;
+	text-align:left;
+}
+
+/* Rule for the title */
+.formContainer .fb-header h2 {font-family: Helvetica, Arial; font-size: 20px; font-weight: bold; padding-top: 0px; color: #333; text-shadow: 0 1px 0 rgba(0,0,0,0.1);}
+.formContainer.fb-small .fb-header h2 {font-size: 16px; font-weight: bold; padding-top: 0px; color: #333; text-shadow: 0 1px 0 rgba(0,0,0,0.1);}
+
+/* Rule for the static text container*/
+.formContainer .fb-static-text { font-family: Helvetica, Arial; margin: 0px; color: #999;}
+
+/* Rule for the static text */
+.formContainer .fb-static-text p { font-family: Helvetica, Arial; font-size: 14px; line-height: 1.6em; padding-bottom: 15px;}
+.formContainer.fb-small .fb-static-text p { font-family: Helvetica, Arial; font-size: 13px; line-height: 1.6em; padding-bottom: 15px;}
+
+/*  Rule for Submit button container */
+.formContainer #fb-submit-button-div {height: 65px; padding: 10px 0 0 0;}
+
+/*  Rule for Submit button */
+#fb-submit-button {
+	color: #fff;
+	font-family: Helvetica, Arial;
+	font-weight: bolder;
+	font-size:15px;
+	border: none;
+	margin-right: 6%;
+	margin-left: 6%;
+	width: 102px; height: 31px;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	cursor: pointer;
+ 	padding:0;
+}
+
+#fb-submit-button:hover {
+
+}
+
+/*  Rule for captcha container */
+#fb-captcha_control { 
+	text-align: center;
+	padding: 30px 0 30px 0 !important; 
+}
+
+/* Rule to be able to control the position of the captcha when generated */
+#fb-captcha_control > div { display:inline-block; }
+
+/*  Rule for captcha input */
+#fb-captcha_control input { padding: 2px 0 !important; }
+
+/*  Rule for captcha internal */
+#recaptcha_table { background-color: rgb(255,255,255); }
+
+/* Rule for the hints */
+.formContainer .fb-hint {
+	display:inline-block;
+	font-size: 11px;
+	color: #888;
+	margin: 5px 0px 1px 0px;
+}
+
+
+/* Rule for the text area container */
+
+
+/* Rule for the checkbox container */
+.formContainer .fb-checkbox { padding: 0 0 0 2px; color: #444; }
+
+/* Rule for the checkbox inputs */
+.formContainer .fb-checkbox input { padding: 0 0 0 2px; display:inline-block;}
+
+/* Rule for the radio buttons container */
+.formContainer .fb-radio { padding: 0 0 0 2px; color: #444; }
+
+/* Rule for the radio buttons inputs */
+.formContainer .fb-radio input { padding: 0 0 0 2px; display:inline-block;}
+
+/* Rule for the labels of checkboxes and radios */
+.formContainer .fb-fieldlabel {
+   display: inline;
+   margin-top: 10px;
+   margin-left: 5px;
+   font-size: 0.9em; 
+}
+
+.formContainer .fb-radio label, .formContainer .fb-checkbox label {
+  margin-bottom:5px;
+  margin-top: 11px;
+}
+
+/* Rule for the input-boxes container */
+.formContainer .fb-input-box {margin-bottom: 5px;}
+
+/* Rule for the input-boxes */
+.formContainer .fb-input-box input {color: rgb(69,69,69);
+			font: normal 12px Helvetica, Arial, Sans-serif;
+			border: 1px solid rgb(220,223,231);
+			border-top-color: rgb(170,173,178);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;}
+		
+/* Rule for the dropdown container */
+.formContainer .fb-dropdown {}
+
+/* Rule for the dropdown select */
+.formContainer .fb-dropdown select { padding: 0px; background: white;
+	font: normal 12px Helvetica, Arial, Sans-serif;
+	width:92%;
+	max-width:100%;
+}
+/* Rule for the listbox container */
+.formContainer .fb-listbox {}
+
+/* Rule for the listbox select */
+.formContainer .fb-listbox select {color: rgb(69,69,69);
+			font: normal 12px Helvetica, Arial, Sans-serif;
+			border: 1px solid rgb(220,223,231);
+			border-top-color: rgb(170,173,178);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+padding: 3px;
+}
+
+/* Rule for the listbox select option (selected element) */
+.formContainer .fb-listbox select option { padding: 3px 0px; }
+		
+/* Rule for the file upload container */
+.formContainer .fb-button { margin: 0 0 5px 0;}
+ 
+/* Rule for the file upload input */
+.formContainer .fb-button input { color: #777; font-family: Helvetica, Arial, Sans-serif;}
+
+/* Rule for the date container */
+.formContainer .fb-input-date { margin: 0 0 5px 0; }
+
+/* Rule for the date input */
+.formContainer .fb-input-date input {color: rgb(69,69,69);
+			font: normal 12px Helvetica, Arial, Sans-serif;
+			border: 1px solid rgb(220,223,231);
+			border-top-color: rgb(170,173,178);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+}
+
+
+/* Rule for the phone input */
+.formContainer .fb-phone input {color: rgb(69,69,69);
+			font: normal 12px Helvetica, Arial, Sans-serif;
+			border: 1px solid rgb(220,223,231);
+			border-top-color: rgb(170,173,178);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+}
+
+/* Rule for the regex input */
+.formContainer .fb-regex input {color: rgb(69,69,69);
+			font: normal 12px Helvetica, Arial, Sans-serif;
+			border: 1px solid rgb(220,223,231);
+			border-top-color: rgb(170,173,178);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+}
+
+/* Rule for the section break container */
+.formContainer .fb-sectionbreak {padding-right: 51px;}
+
+/* Rule for the section break hr */
+.formContainer .fb-sectionbreak hr { margin: 0 auto; padding: 0 auto; border:none; border-top: 1px solid #9e9e9e; width: 100%;}
+
+/* Rule for the labels */
+
+ .formContainer .fb-grouplabel {
+ margin-bottom: 5px;
+ margin-top: 5px;
+ padding-right:5px;
+ clear:both;
+
+}
+
+.formContainer .fb-grouplabel label{
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-top: 4px;
+}
+
+
+
+/* Rule for labels aligned right */
+.fb-rightlabel .fb-grouplabel {
+	float:left;
+	text-align:right;
+	width:30%;
+}
+.fb-rightlabel .fb-input-box,
+.fb-rightlabel .fb-dropdown,
+.fb-rightlabel .fb-listbox,
+.fb-rightlabel .fb-button,
+.fb-rightlabel .fb-textarea,
+.fb-rightlabel .fb-radio,
+.fb-rightlabel .fb-input-number,
+.fb-rightlabel .fb-checkbox,
+.fb-rightlabel .fb-input-date,
+.fb-rightlabel .fb-phone,
+.fb-rightlabel .fb-regex,
+.fb-rightlabel  label.error,
+.fb-rightlabel .fb-hint {
+	float:left;
+	width:65%;
+}
+
+/* General rule for hints */
+ .formContainer.fb-rightlabel .fb-hint { margin-left: 30%; }
+
+ /* Specific rule for input elements */
+ .formContainer.fb-rightlabel .fb-input-box .fb-hint,
+ .formContainer.fb-rightlabel .fb-button .fb-hint,
+ .formContainer.fb-rightlabel .fb-textarea .fb-hint,
+ .formContainer.fb-rightlabel .fb-input-number .fb-hint,
+ .formContainer.fb-rightlabel .fb-input-date .fb-hint,
+ .formContainer.fb-rightlabel .fb-phone .fb-hint,
+ .formContainer.fb-rightlabel .fb-regex .fb-hint{
+        margin-left: 0px;
+        width:100%;
+
+ }
+
+
+
+/* Rule for labels aligned on the left */
+.fb-leftlabel .fb-grouplabel {
+	float:left;
+	width:30%;
+	text-align:left;
+}
+.fb-leftlabel .fb-input-box,
+.fb-leftlabel .fb-dropdown,
+.fb-leftlabel .fb-listbox,
+.fb-leftlabel .fb-button,
+.fb-leftlabel .fb-textarea,
+.fb-leftlabel .fb-input-number,
+.fb-leftlabel .fb-radio,
+.fb-leftlabel .fb-checkbox,
+.fb-leftlabel .fb-input-date,
+.fb-leftlabel .fb-phone,
+.fb-leftlabel .fb-regex,
+.fb-leftlabel  label.error,
+.fb-leftlabel .fb-hint {
+	float:left;
+	width:60%;
+}
+
+/* General rule for hints */
+ .formContainer.fb-leftlabel .fb-hint { margin-left: 30%; }
+
+ /* Specific rule for input elements */
+ .formContainer.fb-leftlabel .fb-input-box .fb-hint,
+ .formContainer.fb-leftlabel .fb-button .fb-hint,
+ .formContainer.fb-leftlabel .fb-textarea .fb-hint,
+ .formContainer.fb-leftlabel .fb-input-number .fb-hint,
+ .formContainer.fb-leftlabel .fb-input-date .fb-hint,
+ .formContainer.fb-leftlabel .fb-phone .fb-hint,
+ .formContainer.fb-leftlabel .fb-regex .fb-hint {
+        margin-left: 0px;
+        width:100%;
+
+ }
+
+
+
+/* Rule for labels aligned on top */
+.fb-toplabel .fb-grouplabel {width: 95%; }
+.fb-toplabel .fb-input-box,
+.fb-toplabel .fb-dropdown,
+.fb-toplabel .fb-listbox,
+.fb-toplabel .fb-button,
+.fb-toplabel .fb-input-number,
+.fb-toplabel .fb-textarea,
+.fb-toplabel .fb-radio,
+.fb-toplabel .fb-checkbox,
+.fb-toplabel .fb-input-date,
+.fb-toplabel .fb-phone,
+.fb-toplabel .fb-regex,
+.fb-toplabel .fb-hint,
+.fb-toplabel  label.error {
+	margin: 9px 0 0 0;
+	float:none;
+	width:95%;
+}
+.formContainer.fb-toplabel .fb-hint {margin-left: 2px}
+
+
+/* Rules checkboxes/radios columns */
+.fb-one-column .fb-radio label, .fb-one-column .fb-checkbox label {
+	display:inline-block;
+	width:100%;
+}
+.fb-two-column .fb-radio label, .fb-two-column .fb-checkbox label {
+	display:inline-block;
+	float:left;
+	width:47%;
+} 
+.fb-three-column .fb-radio label, .fb-three-column .fb-checkbox label {
+	display:inline;
+	float:left;
+	width:33%;
+}
+ 
+
+
+/*  General rules for submit button, static text, and header alignments */
+.formContainer .fb-item-alignment-left {
+   padding-left:0px;
+   text-align:left;
+}
+.formContainer .fb-item-alignment-center {
+   text-align:center;
+}
+.formContainer .fb-item-alignment-right {
+	padding-right:0px;
+	text-align:right;
+}
+
+/*  Rules for container header alignments */
+.formContainer .fb-header.fb-item-alignment-left {}
+.formContainer .fb-header.fb-item-alignment-center {}
+.formContainer .fb-header.fb-item-alignment-right {}
+
+/*  Rules for element header alignments */
+.formContainer .fb-header.fb-item-alignment-left h2 {}
+.formContainer .fb-header.fb-item-alignment-center h2 {}
+.formContainer .fb-header.fb-item-alignment-right h2 {}
+
+/*  Rules for container static text alignments */
+.formContainer .fb-static-text.fb-item-alignment-left {}
+.formContainer .fb-static-text.fb-item-alignment-center {}
+.formContainer .fb-static-text.fb-item-alignment-right {}
+
+/*  Rules for element static text alignments */
+.formContainer .fb-static-text.fb-item-alignment-left p {}
+.formContainer .fb-static-text.fb-item-alignment-center p {}
+.formContainer .fb-static-text.fb-item-alignment-right p {}
+
+
+/*  Rules for container submit alignments */
+.formContainer #fb-submit-button-div.fb-item-alignment-left {}
+.formContainer #fb-submit-button-div.fb-item-alignment-center {}
+.formContainer #fb-submit-button-div.fb-item-alignment-right {}
+
+/*  Rules for element submit alignments */
+.formContainer #fb-submit-button-div.fb-item-alignment-left input {}
+.formContainer #fb-submit-button-div.fb-item-alignment-center input {}
+.formContainer #fb-submit-button-div.fb-item-alignment-right input {}
+
+/* Rules for Validation styles */
+.formContainer label.error {
+    background-color:transparent;
+	font-weight: normal;
+    padding: 5px;
+	display:block;
+	clear:both;
+	color: #BF0000;
+	font: italic 12px Helvetica,sans-serif;
+	margin: 1px 0 0 0;
+}
+.formContainer input[type=text].error, .formContainer input[type=password].error, 
+.formContainer input[type=email].error, .formContainer input[type=number].error,
+.formContainer input[type=date].error, .formContainer input[type=url].error,
+.formContainer input[type=tel].error, .formContainer textarea.error, 
+.formContainer select.error {
+}
+
+/*   Quantites Color */
+.quantity_critical {
+	color: #BF0000;
+	font: bold 14px Helvetica,sans-serif;	
+	text-decoration:  none;
+    	padding: 6px 5px 2px 10px;
+    
+}
+.quantity_normal {
+	color: #000000;
+	font: normal 14px Helvetica,sans-serif;	
+	text-decoration:  none;
+    	padding: 6px 5px 2px 10px;
+}
+
+
+.quantity_near_critical {
+	color:  #749a02;
+	font: normal 14px Helvetica,sans-serif;	
+	text-decoration:  none;
+    	padding: 6px 5px 2px 10px;
+	
+}
+
+
+.quantity_normal:hover   {  
+  text-decoration:  none;
+    text-shadow: 1px 1px 1px #000; 
+} 
+
+.quantity_normal:active  {
+  text-decoration:  none;
+  color: white;
+  }
+
+
+.quantity_critical:hover   {  
+  text-decoration:  none;
+    text-shadow: 1px 1px 1px #000; 
+} 
+
+.quantity_critical:active  {
+  text-decoration:  none;
+  color: white;
+  }
+
+
+.quantity_near_critical:hover   {  
+  text-decoration:  none;
+    text-shadow: 1px 1px 1px #000; 
+} 
+
+.quantity_near_critical:active  {
+  text-decoration:  none;
+  color: white;
+  }

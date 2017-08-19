@@ -1,0 +1,67 @@
+<script src="Contents/signup/signup.js"> </script>  <link href="Contents/signup/signup.css" rel="stylesheet">
+
+
+<ul class="breadcrumb">
+    <li><a href="login.php?Administrator&cmd=users">Χρήστες</a> <span class="divider">/</span></li>
+
+    <li class="active"><a href="#">Προσωπικά Στοιχεία  </a> <?php echo $_rec['email'];?> </li>
+</ul>
+
+<!-- Start Formoid form-->
+<form class="formoid-default"
+      style="font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px"
+      method="post">
+    <input type="hidden" name="register_new_user_completed" value="1">
+    <div class="title"><h5>email:  <?php echo $_rec['email'];?>    <a class="btn btn-warning btn-small" href="mailto:<?php echo $_rec['email'];?>"> επικοινωνία </a>  </h5>
+
+    </div>
+
+
+    <input type="hidden" name="_call_service" value="0">
+
+    <div class="element-radio"><label class="title">Ηλικία :   <?php  echo $_rec['age_class']; ?> , &nbsp;  Φύλο :   <?php echo $_rec['sex']; ?></label>
+
+    </div>
+
+    <div class="element-radio">
+        <label class="title">
+            Συνδέσεις :   <?php  echo $_rec['counter']; ?> , &nbsp;  Εγγραφή :   <?php echo $_rec['date']; ?>
+        </label>
+
+    </div>
+    <div class="element-radio"><label class="title">Επάγγελμα :  <?php echo $_rec['profession']; ?></label>
+
+        <span class="clearfix"></span>
+    </div>
+    <div class="element-radio"><label class="title">Ενημέρωση :  <?php echo $_rec['newsletter']; ?></label>
+
+        <span class="clearfix"></span>
+    </div>
+    <span class="clearfix"></span>
+
+    <div class="element-radio"><label class="title">Αγγελίες :  <?php echo $_total; ?></label>
+
+    </div>
+
+</form>
+<p><a class="btn btn-primary" href="<?php echo $_SERVER['REQUEST_URI'].'&lock=1'; ?>" role="button"> Κλείδωμα Χρήστη </a> &nbsp;
+<!--    <a class="btn btn-info" href="?page=user_panel_aggelies&id=<?php echo $_user; ?>" role="button"> Αγγελίες Χρήστη </a>-->
+<?php if ($_rec['locked']==1) {
+
+    $url = $_SERVER['REQUEST_URI'];
+    $url = str_replace("&lock=1","",$url);
+
+?>
+
+    <a class="btn btn-info" href="<?php echo $url.'&unlock=1'; ?>" role="button"> Ξεκλείδωμα Χρήστη </a> &nbsp;
+    <?
+
+}
+?>
+</p>
+
+<div id="formoid-info"></div>
+
+
+<!-- Stop Formoid form-->
+

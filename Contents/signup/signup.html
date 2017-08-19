@@ -1,0 +1,70 @@
+
+ <form class="form-horizontal"   method="post" action="?page=signup" >
+		<fieldset>
+    <input type="hidden" name="register_new_user" value="1">
+
+<!-- Form Name -->
+<legend>Create new Account</legend>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nam1e">Surname</label>
+  <div class="col-md-4">
+  <input id="nam1e" name="name" pattern=".{4,}" title="4 characters minimum" placeholder="your name " class="form-control input-md"  required="required" type="text">
+  </div>
+</div>
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="login">Login</label>
+  <div class="col-md-4">
+  <input id="login" name="login" pattern=".{3,}" title="3 characters minimum" placeholder="create new login name" class="form-control input-md"  required="required" type="text">
+  <span class="help-block">* desired login name</span>
+  </div>
+</div>
+
+<!-- Search input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>
+  <div class="col-md-4">
+    <input id="email" name="email" type="email" placeholder="valid email"   required="required" class="form-control input-md" type="search">
+    <p class="help-block">* real email verificationl</p>
+  </div>
+</div>
+
+<!-- Search input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Password">Password</label>
+  <div class="col-md-4">
+    <input id="Password" name="password0" type="password" pattern=".{8,}" title="8 characters minimum"  placeholder="Password"  required="required"  class="form-control input-md" type="search">
+    <p class="help-block"> </p>
+  </div>
+</div>
+
+
+<!-- Search input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password1">retype Password</label>
+  <div class="col-md-4">
+    <input id="password1" name="password1" type="password" pattern=".{8,}" title="8 characters minimum"  placeholder="placeholder"  required="required" class="form-control input-md" type="search">
+    <p class="help-block"> </p>
+  </div>
+</div>
+
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"> </label>
+  <div class="col-md-4">
+	      <div class="submit"><input id="singlebutton" type="submit" class="btn btn-primary" value="Request Account"/></div>
+
+   </div>
+</div>
+
+</fieldset>
+</form>
+

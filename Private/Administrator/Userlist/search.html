@@ -1,0 +1,24 @@
+<script src="App/Javascript/jquery.livesearch.js"></script>
+
+
+<div style="display: inline; float: right; margin-left: 4px;margin-right: 2px; ">
+
+    <div class="input-group input-group-sm" style="width:450px;">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Username" id="query" name="query"
+               placeholder="  αναζήτηση χρήστη " autofocus value="">
+    </div>
+
+
+
+</div>
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#query").liveSearch( { url : 'App/Ajax/livesearch.php?q=' } );
+    });
+
+</script>
